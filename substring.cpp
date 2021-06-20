@@ -8,7 +8,7 @@ string sub(string s, string curr = "", int idx = 0)
 	if (idx == n)
 	{
 
-		break;
+		
 	}
 	cout << curr << " ";
 
