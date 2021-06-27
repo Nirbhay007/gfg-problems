@@ -33,9 +33,16 @@ int countones(bool arr[], int n)
 	}
 	return -1;
 }
+int arr[] = {1, 1, 1, 1, 1, 0, 0, 0, 0};
+
+void func(&arr)
+{
+	cout << arr[0];
+}
 
 int main()
 {
-	bool arr[] = {1, 1, 1, 1, 1, 0, 0, 0, 0};
-	cout << countones(arr, 8);
+	int arr[] = {1, 1, 1, 1, 1, 0, 0, 0, 0};
+	// cout << countones(arr, 8);
+	cout << func(arr);
 }

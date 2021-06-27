@@ -18,9 +18,26 @@
 
 # a = A(0)
 # print(a.__a)
-from datetime import datetime
 
-datetime1 = datetime(2019, 11, 27, 11, 27, 22)
-datetime2 = datetime(2019, 11, 27, 0, 0, 0)
 
-print(datetime1-datetime2)
+def persistence(n):  # 39
+    # your code
+    count = 0
+    if((n//10) == 0):
+        return count
+    while(n):
+        mul = 1
+        while(n):
+            last = n % 10  # 9
+            mul *= last  # 27
+            n = n//10  # 0
+
+        n = mul  # 27
+
+        count += 1
+        if(n//10 == 0):
+            break
+    return count
+
+
+print(persistence(39))
