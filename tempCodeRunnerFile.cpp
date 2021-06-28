@@ -1,1 +1,2 @@
-sorted_insert(head, 50);
+	// head = deleteheadoptimized(head);
+	// head = deletehead(head);
